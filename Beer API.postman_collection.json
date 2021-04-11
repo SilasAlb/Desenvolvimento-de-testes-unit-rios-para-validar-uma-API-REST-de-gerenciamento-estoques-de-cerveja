@@ -1,0 +1,116 @@
+{
+	" variáveis " : [],
+	" info " : {
+		" nome " : " API de cerveja " ,
+		" _postman_id " : " 2310266f-1c5d-0 relevant-e78f-39e9340d8f95 " ,
+		" descrição " : " " ,
+		" schema " : " https://schema.getpostman.com/json/collection/v2.0.0/collection.json "
+	},
+	" item " : [
+		{
+			" name " : " List Beers " ,
+			" pedido " : {
+				" url " : " http: // localhost: 8080 / api / v1 / beers " ,
+				" método " : " GET " ,
+				" cabeçalho " : [
+					{
+						" chave " : " Autorização " ,
+						" Valor " : " Portador eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqYXZhaW51c2UiLCJleHAiOjE1OTE2NzAwODgsImlhdCI6MTU5MTY1MjA4OH0.j6nd_s7VFvPVbh4abKrjeaYxgmDCxMxc0O18lPz2juONf3zvKBO7vx-w2WO2b_BJnOl5vAI_5DLg5RrgIZ5WEg " ,
+						" descrição " : " "
+					}
+				],
+				" corpo " : {},
+				" descrição " : " "
+			},
+			" resposta " : []
+		},
+		{
+			" name " : " Criar Cerveja " ,
+			" pedido " : {
+				" url " : " http: // localhost: 8080 / api / v1 / beers " ,
+				" método " : " POST " ,
+				" cabeçalho " : [
+					{
+						" chave " : " Tipo de conteúdo " ,
+						" valor " : " aplicativo / json " ,
+						" descrição " : " "
+					}
+				],
+				" corpo " : {
+					" modo " : " bruto " ,
+					" raw " : " { \ n \ t \" nome \ " : \" Colorado appia \ " , \ n \ t \" marca \ " : \" Colorado \ " , \ n \ t \" max \ " : 20 , \ n \ t \ " quantidade \" : 10, \ n \ t \ " tipo \" : \ " LAGER \" \ n } "
+				},
+				" descrição " : " "
+			},
+			" resposta " : []
+		},
+		{
+			" nome " : " Pegue cerveja pelo nome " ,
+			" pedido " : {
+				" url " : " http: // localhost: 8080 / api / v1 / beers / Colorado appia " ,
+				" método " : " GET " ,
+				" cabeçalho " : [],
+				" corpo " : {},
+				" descrição " : " "
+			},
+			" resposta " : []
+		},
+		{
+			" nome " : " Excluir cerveja por id " ,
+			" pedido " : {
+				" url " : " http: // localhost: 8080 / api / v1 / beers / 1 " ,
+				" método " : " DELETE " ,
+				" cabeçalho " : [
+					{
+						" chave " : " Tipo de conteúdo " ,
+						" valor " : " aplicativo / json " ,
+						" descrição " : " "
+					}
+				],
+				" corpo " : {},
+				" descrição " : " "
+			},
+			" resposta " : []
+		},
+		{
+			" nome " : " Aumentar o estoque de cerveja " ,
+			" pedido " : {
+				" url " : " http: // localhost: 8080 / api / v1 / beers / 1 / incremento " ,
+				" método " : " PATCH " ,
+				" cabeçalho " : [
+					{
+						" chave " : " Tipo de conteúdo " ,
+						" valor " : " aplicativo / json " ,
+						" descrição " : " "
+					}
+				],
+				" corpo " : {
+					" modo " : " bruto " ,
+					" bruto " : " { \ n \ t \" quantidade \ " : 2 \ n } "
+				},
+				" descrição " : " "
+			},
+			" resposta " : []
+		},
+		{
+			" nome " : " Diminuir estoque de cerveja " ,
+			" pedido " : {
+				" url " : " http: // localhost: 8080 / api / v1 / beers / 1 / decremento " ,
+				" método " : " PATCH " ,
+				" cabeçalho " : [
+					{
+						" chave " : " Tipo de conteúdo " ,
+						" valor " : " aplicativo / json " ,
+						" descrição " : " "
+					}
+				],
+				" corpo " : {
+					" modo " : " bruto " ,
+					" bruto " : " { \ n \ t \" quantidade \ " : 2 \ n } "
+				},
+				" descrição " : " "
+			},
+			" resposta " : []
+		}
+	]
+}
